@@ -38,7 +38,7 @@ nav {
   float: left;
 }
 nav a {
-  width: 10em;
+  width: 8em;
   height: 1em;
   display: block;
   color: white;
@@ -48,11 +48,6 @@ nav a {
 }
 
 
-
-
-ul.menu > li:last-child {
-  float: right;
-}
 nav li:hover {
   background-color: rgb(118, 32, 71);
   transition: 0.5s;
@@ -306,7 +301,7 @@ th, td {
 .SDC {
   display: block;
   background-color: beige;
-  width: 100%;
+  width: 80%;
   border: 1px solid rgb(26, 19, 79);
   padding: 1em 1em;
   border-radius: 2em;
@@ -325,12 +320,11 @@ nav ul {
   width: 100%
 }
 
-.logo img {
-  max-width: auto;
-  height: 1.5em;
-  object-fit: cover;
-  align-items: center;
+.logo {
+  max-width: 50%;
 }
+
+
 
 #main-heading{
   font-size: 1.7em;
