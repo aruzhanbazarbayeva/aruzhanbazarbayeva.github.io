@@ -22,6 +22,7 @@ nav {
   width: 100%;
   background-color:rgb(0, 0, 0);
   overflow: hidden;
+  display: block;
 }
 .menu {
   list-style-type: none;
@@ -30,21 +31,25 @@ nav {
 }
 .logo img {
   width: auto;
-  height: 21px;
+  height: 1.5em;
   object-fit: cover;
 }
 .logo, ul.menu li {
   float: left;
 }
 nav a {
-  width: 140px;
-  height: 20px;
+  width: 10em;
+  height: 1em;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+
+
+
+
 ul.menu > li:last-child {
   float: right;
 }
@@ -64,7 +69,7 @@ nav li:hover {
   text-align: center;
   color: rgb(255, 0, 140);
   left: 50%;
-  font-size: 25pt;
+  font-size: 2em;
   letter-spacing: 0.1em;
   transition: 0.3s;
   text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
@@ -120,7 +125,7 @@ article {
 #Important {
   color: rgb(32, 21, 183);
   text-shadow: 2px 2px #808080;
-  font-size: 25pt;
+  font-size: 2em;
   text-transform: uppercase;
 }
 #Important:hover {
@@ -129,20 +134,26 @@ article {
 }
 
 /*Some Dummy Content styling*/
+.SDC1 {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .SDC {
+  display: block;
   background-color: rgb(221, 233, 244);
-  width: 29%;
+  width: 100%;
   border: 1px solid rgb(26, 19, 79);
   padding: 1em 1em;
   border-radius: 2em;
   margin: 1em 0em 1em 1em;
   box-sizing: border-box;
-  float: left;
 }
 
 /*Styling footer*/
 h5 {
-  font-size: 12pt;
+  font-size: 1em;
 }
 .footer{
   margin-top: 0;
@@ -161,7 +172,7 @@ h5 {
   padding-left: 0;
 }
 .test1, .test2{
-  padding: 3px 5px 3px 5px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .listofitems{
@@ -181,7 +192,7 @@ h5 {
 
 .footer div h5{
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 0.5em;
   letter-spacing: 1px;
   color: #efefef;
 }
@@ -254,9 +265,10 @@ th, td {
 
   table,th,td 
   {
-    width:fit-content;
+    width:60%;
     padding: auto;
     background-color: beige;
+    align-items: center;
   }
 
  html 
@@ -284,17 +296,65 @@ th, td {
   height: auto
 }
 
+.SDC1 {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .SDC {
+  display: block;
   background-color: beige;
-  width: 29%;
+  width: 100%;
   border: 1px solid rgb(26, 19, 79);
   padding: 1em 1em;
   border-radius: 2em;
   margin: 1em 0em 1em 1em;
   box-sizing: border-box;
-  float: left;
+}
+
+nav a 
+{
+  width:30%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.logo img {
+  max-width: auto;
+  height: 1.5em;
+  object-fit: cover;
+  align-items: center;
+}
+
+#main-heading{
+  font-size: 1.7em;
 }
 
 
-
+.footer{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
 }
+.col-1{
+ 
+  width:100%;
+}
+
+.col-2{
+ 
+  width:100%;
+}
+
+.col-3{
+ 
+  width:100%;
+}
+}
+
