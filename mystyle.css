@@ -88,8 +88,8 @@ article {
   background-color: hsl(330, 100%, 95%);
   width: 80%;
   border: 1px solid black;
-  padding: 25px 100px 25px 100px;
-  border-radius: 10px;
+  padding: 2em 1em 2em 1em;
+  border-radius: 5px;
   margin: 15px auto;
   box-sizing: border-box;
 }
@@ -131,11 +131,11 @@ article {
 /*Some Dummy Content styling*/
 .SDC {
   background-color: rgb(221, 233, 244);
-  width: 32%;
+  width: 29%;
   border: 1px solid rgb(26, 19, 79);
-  padding: 25px 25px;
-  border-radius: 2px;
-  margin: 15px 0px 15px 15px;
+  padding: 1em 1em;
+  border-radius: 2em;
+  margin: 1em 0em 1em 1em;
   box-sizing: border-box;
   float: left;
 }
@@ -246,7 +246,7 @@ th, td {
 }
 
 /*Mobile version*/
-@media screen and (max-width: 767px) {
+@media screen and (min-width:300px) and (max-width: 767px) {
   body {
     width: 100%;
     background-color: aquamarine;
@@ -261,11 +261,40 @@ th, td {
 
  html 
  {
-  font-size: smaller;
+  font-size:0.7em;
  }
 
  .logo, ul.menu li
  {
   flex:auto
  }
+
+ 
+ article {
+  background-color: hsl(330, 100%, 95%);
+  width: 70%;
+  border: 1px solid black;
+
+  
+ }
+
+
+ img {
+  max-width: 100%;
+  height: auto
+}
+
+.SDC {
+  background-color: beige;
+  width: 29%;
+  border: 1px solid rgb(26, 19, 79);
+  padding: 1em 1em;
+  border-radius: 2em;
+  margin: 1em 0em 1em 1em;
+  box-sizing: border-box;
+  float: left;
+}
+
+
+
 }
