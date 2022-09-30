@@ -222,7 +222,7 @@ table,th,td {
   border: rgb(0, 0, 0) solid 1px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top:auto;
   background-color:#eee;
 }
 th, td {
@@ -246,7 +246,26 @@ th, td {
 }
 
 /*Mobile version*/
- @media screen and (max-width:767px){
-  width:100%;
-  background-color: lightblue;
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    background-color: aquamarine;
+  }
+
+  table,th,td 
+  {
+    width:fit-content;
+    padding: auto;
+    background-color: beige;
+  }
+
+ html 
+ {
+  font-size: smaller;
  }
+
+ .logo, ul.menu li
+ {
+  flex:auto
+ }
+}
