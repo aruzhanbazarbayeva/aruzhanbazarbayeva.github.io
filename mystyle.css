@@ -251,8 +251,121 @@ th, td {
   width: 100%;
 }
 
+
+
+/*Tablet version*/
+@media screen and (min-width:768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    background-color: rgb(160, 167, 246);
+  }
+
+  table,th,td 
+  {
+    width:100%;
+    padding: auto;
+    background-color: beige;
+    align-items: center;
+  }
+
+ html 
+ {
+  font-size:1em;
+ }
+
+ .logo, ul.menu li
+ {
+  flex:auto
+ }
+
+ 
+ article {
+  background-color: hsl(330, 71%, 97%);
+  width: 80%;
+  border: 1px solid black;
+ }
+
+
+ img {
+  max-width: 100%;
+  height: auto
+}
+
+.SDC1 {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/*
+.SDC {
+  display: block;
+  background-color: beige;
+  width: 80%;
+  border: 1px solid rgb(26, 19, 79);
+  padding: 1em 1em;
+  border-radius: 2em;
+  margin: 15px auto;
+  box-sizing: border-box;
+}*/
+
+.SDC {
+  background-color: rgb(221, 233, 244);
+  width: 30%;
+  border: 1px solid rgb(26, 19, 79);
+  padding: 25px 25px;
+  border-radius: 2px;
+  margin: 15px 0px 15px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a 
+{
+  width:100%;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+a.logo {
+  padding: 14px 0px;
+}
+
+#main-heading{
+  font-size: 1.7em;
+}
+
+
+.footer{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+.col-1{
+ 
+  width:100%;
+}
+
+.col-2{
+ 
+  width:100%;
+}
+
+.col-3{
+ 
+  width:100%;
+}
+}
+
 /*Mobile version*/
-@media screen and (min-width:300px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   body {
     width: 100%;
     background-color: aquamarine;
@@ -260,7 +373,7 @@ th, td {
 
   table,th,td 
   {
-    width:60%;
+    width:90%;
     padding: auto;
     background-color: beige;
     align-items: center;
@@ -304,8 +417,8 @@ th, td {
   width: 80%;
   border: 1px solid rgb(26, 19, 79);
   padding: 1em 1em;
-  border-radius: 2em;
-  margin: 1em 0em 1em 1em;
+  border-radius: 2em;  
+  margin: 15px auto;
   box-sizing: border-box;
 }
 
@@ -353,4 +466,3 @@ nav ul li {
   width:100%;
 }
 }
-
