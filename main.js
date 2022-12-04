@@ -25,3 +25,21 @@ function guessWord() {
             alert("Try Again!")
     }
 }
+
+function openHamburger() {
+    var logo = document.getElementById("logo");
+    var x = document.getElementById("nav__tabs");
+    var show = document.getElementById("nav-show");
+    var close = document.getElementById("nav-close");
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+        logo.style.display = "block";
+        close.style.display = "none";
+        show.style.display = "block";
+    } else {
+        x.style.display = "flex";
+        logo.style.display = "none";
+        close.style.display = "block";
+        show.style.display = "none";
+    }
+}

@@ -5,38 +5,37 @@
     <title>About me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script type='text/javascript' src="main.js"></script>
 </head>
 <body class="body" id="body">
     <header class="header container">
         <nav class="nav">
-            <a href="" class="nav__logo">
+            <a href="" class="nav__logo" id="logo">
                 <span>&#128522</span>
                 About me
             </a>
-            <div class="nav__tabs">
-                <a href="#home" class="nav__tab" onclick="animateScrolling('home')">
+            <div class="nav__tabs" id="nav__tabs" >
+                <a href="" class="nav__tab" onclick="animateScrolling('home')">
                     <i class="uil uil-estate nav__icon"></i>
                     Home
                 </a>
-                <a href="./pages/work.html" class="nav__tab">
+                <a href="pages/work.html" class="nav__tab">
                     <i class="uil uil-file-alt nav__icon"></i> 
                     Work
                 </a>
-                <a href="#about" class="nav__tab" onclick="animateScrolling('about')">
+                <a href="" class="nav__tab" onclick="animateScrolling('about')">
                     <i class="uil uil-user nav__icon"></i> 
                     About
                 </a>
-                <a href="#contact" class="nav__tab" onclick="animateScrolling('contact')">
+                <a href="" class="nav__tab" onclick="animateScrolling('contact')">
                     <i class="uil uil-message nav__icon"></i>
                     Contact
                 </a>
             </div>
-            <div class="hamburger">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
+            <div class="hamburger" id="hamburger">
+                <i class="uil uil-apps" id="nav-show" onclick="openHamburger()"></i>
+                <i class="uil uil-times" id="nav-close" onclick="openHamburger()"></i>
             </div>
         </nav>
     </header>
@@ -82,31 +81,31 @@
                             <div class="company__name">Asar-Ume</div>
                             <div class="company__location">Nur-Sultan</div>
                         </div>
-                        <div class="block__job-title">Volunteer</div>
+                        <div class="block__job-title">Volunteer hdajhdkjahskjdhaksj hajshkjadk</div>
                     </div>
                     <div class="experience__block">
-                        <div class="block__years">2019-2020</div>
+                        <div class="block__years">2020-2021</div>
                         <div class="block__company">
-                            <div class="company__name">NU</div>
-                            <div class="company__location">Nur-Sultan</div>
-                        </div>
-                        <div class="block__job-title">Student</div>
-                    </div>
-                    <div class="experience__block">
-                        <div class="block__years">2018-2019</div>
-                        <div class="block__company">
-                            <div class="company__name">Zhenis</div>
+                            <div class="company__name">Asar-Ume</div>
                             <div class="company__location">Nur-Sultan</div>
                         </div>
                         <div class="block__job-title">Volunteer</div>
                     </div>
                     <div class="experience__block">
-                        <div class="block__years">2013-2018</div>
+                        <div class="block__years">2020-2021</div>
                         <div class="block__company">
-                            <div class="company__name">KTL</div>
+                            <div class="company__name">Asar-Ume</div>
                             <div class="company__location">Nur-Sultan</div>
                         </div>
-                        <div class="block__job-title">Student</div>
+                        <div class="block__job-title">Volunteer</div>
+                    </div>
+                    <div class="experience__block">
+                        <div class="block__years">2020-2021</div>
+                        <div class="block__company">
+                            <div class="company__name">Asar-Ume</div>
+                            <div class="company__location">Nur-Sultan</div>
+                        </div>
+                        <div class="block__job-title">Volunteer</div>
                     </div>
                 </div>
             </div>
@@ -129,13 +128,13 @@
                     <p class="links__description">Are you interested in collaborating or want to connect or chat? If so, hit the social media icon below or contact me via LinkedIn.</p>
                     <div class="links__media">
                         <!-- href="" cюда нужно добавить ссылки на социальные медиа -->
-                        <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAACoNKpIBPed27Lz4dyYlx8ZrxyACgKLilIk&keywords=%D0%B0%D1%80%D1%83%D0%B6%D0%B0%D0%BD%20%D0%B1%D0%B0%D0%B7%D0%B0%D1%80%D0%B1%D0%B0%D0%B9&origin=RICH_QUERY_SUGGESTION&position=0&searchId=90bd8dc7-50c2-4f54-9ec1-e1817f21149d&sid=OHg" target="_blank" class="media__icon">
+                        <a href="" target="_blank" class="media__icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://www.instagram.com/sabq__/" target="_blank" class="media__icon">
+                        <a href="" target="_blank" class="media__icon">
                             <i class="uil uil-dribbble"></i>
                         </a>
-                        <a href="https://www.instagram.com/sabq__/" target="_blank" class="media__icon">
+                        <a href="" target="_blank" class="media__icon">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
