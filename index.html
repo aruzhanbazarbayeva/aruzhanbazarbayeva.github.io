@@ -1,322 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Design</title>
-  <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css" />
+    <script type='text/javascript' src="main.js"></script>
 </head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <div class="banner"></div>
-  </header>
-
-  <!-- Navbar -->
-  <nav>
-      <a class="logo" href="#">
-        <img src="logo.png" alt="logo" width="80px" height="80px">
-      </a>
-      <ul class="menu">
-        <li><a class="active" href="#task">Task</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#submission">Submission</a></li>
-        <li><a href="#grading">Grading</a></li>
-        <li><a href="#deadline">Deadline</a></li>
-        <li><a href="#">SignIn</a></li>
-      </ul>
-    </nav>
-
-  <!-- Main Content -->
-  <section class="main_content">
-    <h1 id="main-heading" class="topic">
-      Lab 4 - Designing with CSS 
-    </h1>
-    <hr>
-    <article id="task">
-      <h2 >Task</h2>
-      <p>
-        <img src="https://toggl.com/blog/wp-content/uploads/2018/09/project-task-list.jpg" class=task_img alt="" width="300px" height="210">
-        As you have alredy learned in the last lecture, 
-        CSS is about the presentation of the documents
-        like HTML or XML.
-        So, in this lab assignment you need to form a group of two people and then together apply
-        CSS styling rules to make this template HTML file look
-        beautiful and interesting.  
-      </p>
-      <p>
-        There are no 
-        limits to what techniques you use and how you 
-        ultimately solve this task. 
-        However, there are some minimal requirements
-        which are explained in the next section below.
-        <a href="#requirements">Next...</a>
-      </p>
-    </article>
-    <article id="requirements">
-      <h2 >Requirements</h2>
-      <p class="req">
-        
-        The main requirement for this task is to 
-        style this HTML document without any 
-        changes (including adding new and deleting the existing elements) to itself except for these cases: 
-        <ul id="heh">
-          <li>
-            You can add <strong>id</strong>
-            and <strong>class</strong> 
-            attributes to the ncessary elements. 
-            </li>
-            <li>
-            You can replace the 
-            images in the defined elements within this document with your
-            own ones. 
-            </li><li>
-            Notice that there is a place for a 
-            large banner on the top of the page,
-            you <strong>must</strong> place an image there only using CSS.
-            </li>
-            <li>
-              You <strong>must</strong> write your names in the specified fields below.
-            </li>
-            <li>You can change the location
-              of in the map below or replace it with the image.
-            </li>
-        </ul>
-      </p>
-      <p class="req">
-        In your stylesheet you <strong>must</strong>
-         use these selectors:
-        <ul id="heh">
-          <li>Element selectors;</li>
-          <li>Class selectors;</li>
-          <li>Attribute selectors;</li>
-          <li>ID selectors.</li>
-          <li>Pseudo-class selectors.</li>
-        </ul>
-      </p>
-      <p class="req">
-        Also, you <strong>must</strong> 
-        use the necessary CSS properties
-        and demonstrate the following changes
-        of the elements:
-        <ul id="heh">
-          <li>font and background colors;</li>
-          <li>font family and size;</li>
-          <li>margin, padding and borders;</li>
-          <li>image sizes (width and height);</li>
-          <li>text alignment (horizontal and vertical);</li>
-        </ul>
-        Additionally, a special focus <strong>must</strong> 
-        be done to the menu links.        
-        They need to change their status appropriately 
-        (active, hover, visited)
-        as well as be placed in a natural way,
-        i.e. horizontally or vertically. 
-        <a href="#submission">Next...</a>
-      </p>
-    </article>
-    <article id="submission">
-      <h2>Submission</h2>
-      <p>
-       As usual, you <strong>must</strong> submit 
-       your work via Github. All the files and images need to go to 
-       your <strong> <i>username.github.io</i> </strong>repository. 
-       Also, this page must be available 
-       through this domain name.
-      </p>
-      <h3 id="Title_group">Group</h3>
-      <p>
-        Since this is a group project, i.e. a team of two members,
-        it is required to insert a photo of your group
-        in this <strong>&lt;img&gt;</strong> element and write your names in the
-        following list items. <br>
-         <img src="group_photo.jpg" id=group_photo alt="" width="300px" height="210">
-
-        <ul class="members">
-          <li>Zere Orynbassarova</li>
-          <li>Aruzhan Bazarbayeva</li>
-        </ul>
-        Also, to submit your group members, 
-        please fill in the this 
-        <a href="#">Google Sheet</a> form. 
-        <a href="#grading">  Next...</a>
-      </p>
-    </article>
-    <article id="grading">
-      <h2>Grading</h2>
-      For this assignment you will get 
-      <strong>80 points</strong>  in total.
-      The final score is the sum of the points 
-      for each of the criteria below.
-      This score will be the same for both 
-      of the team members.
-      <table>
-        <tr>
-          <th>Criteria</th>
-          <th>Points</th>
-        </tr>
-        <tr>
-          <td>Group is formed </td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>CSS file is linked to the document</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Banner image is present</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Menu is styles appropriately</td>
-          <td>5 pts</td>
-        </tr>
-        
-        <tr>
-          <td>Group photo is present </td>
-          <td>5 pts</td>
-        </tr>
-         <tr>
-          <td>HTML file is unchanged</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Required selectors are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Required CSS properties are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website is available online</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website looks nice and not broken</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Extra cool stuff is used</td>
-          <td>5 pts</td>
-        </tr>
-        </tr>
-      </table>
-    </article>
-  </section>
-
-  <!-- Aside Information -->
-  <aside>
-    <h3 id="Important">Important</h3>
-    <section class="aside_content">
-      <article id="deadline">
-        <h4>Deadlines:</h4>
-        There are two deadlines - one for 
-        forming a group and the other is for the 
-        submission of the assignment itself.
-        <ul>
-          <li>Group: Sep. 9, 2022, 23:59</li>
-          <li>Submission: Sep. 18, 2022, 23:59</li>
-        </ul>
-        <p>
-        Missing the deadline for the group formation will result in 
-        <strong> not getting any points</strong> for the corresponding criteria. <br>
-        </p>
-        <p>And, as usual, missing the deadline for submittion of your work will result in reduction of your score by 50%.</p>
-        
-        <a href="#">More...</a>
-      </article>
-      </section>
-     
-        <h3>Some Dummy Content</h3>
-       <section class="SDC1">
-        <article class="SDC">
-        <h4>Article 1</h4>
-        <p class="article 1">
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article class="SDC">
-        <h4>Article 2</h4>
-        <p class="article 2">
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article class="SDC">
-        <h4>Article 3</h4>
-        <p class="article 3">
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-    </section>
-  </aside>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="col-1">
-      <div class="footer3">
-        <h5>Contacts</h5>
-        <p>
-          Nazarbayev University <br>
-          53 Kabanbay Batyr ave. <br>
-          Block 7, Room 7.422 <br>
-          Ph.: +7-7172-123-4567 <br>
-          <a href="mailto:info@naturallyinspired.com" class="email">
-            info@naturallyinspired.com
-          </a>
-        </p>
-      </div>
-      <div class="single_ftr map">
-          <iframe src="https://maps.google.com/maps?q=Nazarbayev%20university,%20Nur-Sultan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-      </div>
-    </div>
-    <div class="col-2">
-      <h5>Top 10 Categories</h5>
-      <ul class="listofcategories">
-        <li class="test1"><a href="#">Category 1</a></li>
-        <li class="test1"><a href="#">Category 2</a></li>
-        <li class="test1"><a href="#">Category 3</a></li>
-        <li class="test1"><a href="#">Category 4</a></li>
-        <li class="test1"><a href="#">Category 5</a></li>
-        <li class="test1"><a href="#">Category 6</a></li>
-        <li class="test1"><a href="#">Category 7</a></li>
-        <li class="test1"><a href="#">Category 8</a></li>
-        <li class="test1"><a href="#">Category 9</a></li>
-        <li class="test1"><a href="#">Category 10</a></li>
-      </ul>
-    </div>
-    <div class="col-3">
-      <h5>Quick Links</h5>
-      <ul class="listofitems">
-        <li class="test2"><a href="#">Item1</a></li>
-        <li class="test2"><a href="#">Item2</a></li>
-        <li class="test2"><a href="#">Item3</a></li>
-        <li class="test2"><a href="#">Item4</a></li>
-        <li class="test2"><a href="#">Item5</a></li>
-        <li class="test2"><a href="#">Item6</a></li>
-      </ul>
-    </div>
-  </footer>
+<body class="body" id="body">
+    <header class="header container">
+        <nav class="nav">
+            <a href="" class="nav__logo">
+                <span>&#128522</span>
+                About me
+            </a>
+            <div class="nav__tabs">
+                <a href="#home" class="nav__tab" onclick="animateScrolling('home')">
+                    <i class="uil uil-estate nav__icon"></i>
+                    Home
+                </a>
+                <a href="./pages/work.html" class="nav__tab">
+                    <i class="uil uil-file-alt nav__icon"></i> 
+                    Work
+                </a>
+                <a href="#about" class="nav__tab" onclick="animateScrolling('about')">
+                    <i class="uil uil-user nav__icon"></i> 
+                    About
+                </a>
+                <a href="#contact" class="nav__tab" onclick="animateScrolling('contact')">
+                    <i class="uil uil-message nav__icon"></i>
+                    Contact
+                </a>
+            </div>
+            <div class="hamburger">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="home container" id="home">
+            <div>
+                <h1 class="home__icon">👋</h1>
+                <h1 class="home__heading">Hello, I am Aruzhan Bazarbayeva</h1>
+                <p class="home__subheading">I am a 4th-year student at Nazarbayev University studying Economics. I am enthusiastic and hardworking.</p>
+            </div>
+            <div>
+                <img
+                    src="./images/main.jpg"
+                    alt="my portfolio image"
+                    class="home__image"
+                />
+            </div>
+        </div>
+        <div class="about container" id="about">
+            <div class="block__heading">
+                <div class="heading__title">
+                    <h2 class="title__emoji">👩‍💻</h2>
+                    <h2 class="title__name">About</h2>
+                </div>
+                <a class="heading__link" href="" target="_blank">
+                    <div class="link__name">Linkedin</div>
+                    <div class="link__icon">
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="about__info">
+                <div class="about__story">
+                    <h3 class="story__heading">My Story</h3>
+                    <p class="story__text">I have been studying Economics and made some projects since 2018. During this time, I have had the opportunity to work with some amazing people on several cutting-edge projects.</p>
+                    <p class="story__text">As a student, I have managed several small teams. As a leader and mentor, I strive to have my teams flourish by challenging them to be innovative and get out of their comfort zones.</p>
+                </div>
+                <div class="about__experience">
+                    <h3>Where I've Worked</h3>
+                    <div class="experience__block">
+                        <div class="block__years">2020-2021</div>
+                        <div class="block__company">
+                            <div class="company__name">Asar-Ume</div>
+                            <div class="company__location">Nur-Sultan</div>
+                        </div>
+                        <div class="block__job-title">Volunteer</div>
+                    </div>
+                    <div class="experience__block">
+                        <div class="block__years">2019-2020</div>
+                        <div class="block__company">
+                            <div class="company__name">NU</div>
+                            <div class="company__location">Nur-Sultan</div>
+                        </div>
+                        <div class="block__job-title">Student</div>
+                    </div>
+                    <div class="experience__block">
+                        <div class="block__years">2018-2019</div>
+                        <div class="block__company">
+                            <div class="company__name">Zhenis</div>
+                            <div class="company__location">Nur-Sultan</div>
+                        </div>
+                        <div class="block__job-title">Volunteer</div>
+                    </div>
+                    <div class="experience__block">
+                        <div class="block__years">2013-2018</div>
+                        <div class="block__company">
+                            <div class="company__name">KTL</div>
+                            <div class="company__location">Nur-Sultan</div>
+                        </div>
+                        <div class="block__job-title">Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact container" id="contact">
+            <div class="block__heading">
+                <div class="heading__title">
+                    <h2 class="title__emoji">🤙</h2>
+                    <h2 class="title__name">Contact</h2>
+                </div>
+                <a class="heading__link" href="mailto:aruzhanb2001@mail.ru?subject =Contact&body = Hello!" target="_blank">
+                    <div class="link__name">Email</div>
+                    <div class="link__icon">
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="contact__info">
+                <div class="contact__links">
+                    <p class="links__description">Are you interested in collaborating or want to connect or chat? If so, hit the social media icon below or contact me via LinkedIn.</p>
+                    <div class="links__media">
+                        <!-- href="" cюда нужно добавить ссылки на социальные медиа -->
+                        <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAACoNKpIBPed27Lz4dyYlx8ZrxyACgKLilIk&keywords=%D0%B0%D1%80%D1%83%D0%B6%D0%B0%D0%BD%20%D0%B1%D0%B0%D0%B7%D0%B0%D1%80%D0%B1%D0%B0%D0%B9&origin=RICH_QUERY_SUGGESTION&position=0&searchId=90bd8dc7-50c2-4f54-9ec1-e1817f21149d&sid=OHg" target="_blank" class="media__icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sabq__/" target="_blank" class="media__icon">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sabq__/" target="_blank" class="media__icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" onsubmit="guessWord()">
+                        <label for="word">I guessed some random word from my portfolio, try to guess it</label>
+                        <textarea id="word" name="word" placeholder="Write one word.." style="height:100px"></textarea>
+                        <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
